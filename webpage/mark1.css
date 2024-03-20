@@ -1,0 +1,23 @@
+*
+        {
+            scroll-behavior: smooth;
+        }
+        h1
+        {
+            /* color: blue !important; */
+            color: blue;
+        }
+        .p4
+        {
+            color: brown;
+        }
+        #heading1
+        {
+            color: darkorchid;
+        }
+        div 
+        {
+            border-width: 3px;
+            border-color: black;
+            border-style: solid;
+        }

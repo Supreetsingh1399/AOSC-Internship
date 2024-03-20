@@ -1,0 +1,191 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Times New Roman", Times, serif;
+}
+nav {
+  position: fixed;
+  top: 0;
+  display: flex;
+  border: 3px double grey;
+  width: 100%;
+  height: 10vh;
+  z-index: 1;
+  background-color: white;
+}
+#logo {
+  width: 40%;
+  margin: auto;
+  text-align: center;
+  position: relative;
+  font-size: 2.5vh;
+}
+#logo h3 {
+  color: black;
+}
+.nav_item ul {
+  display: flex;
+  width: 60%;
+  /* margin: auto; */
+}
+.nav_item {
+  width: 50%;
+  position: relative;
+}
+.nav_item ul li {
+  list-style-type: none;
+  padding-top: 28px;
+  font-size: 2.5vh;
+  /* z-index: 1; */
+}
+.nav_item ul li a {
+  text-decoration: none;
+  color: gray;
+  margin: auto;
+  padding: .8vw;
+}
+.nav_item ul li a:hover {
+  color: white;
+  background-color: green;
+  border-color: green;
+  border-radius: 24px;
+}
+.container1 {
+  width: 50%;
+  margin: auto;
+}
+#text {
+  text-align: center;
+  color: gray;
+  /* margin-top: 100px; */
+  position: relative;
+  margin-top: 11vh;
+}
+.container2 {
+  padding-top: 22px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  /* border: 3px solid black; */
+  gap: 10px;
+  position: relative;
+  width: 100%;
+  height: 20%;
+}
+.img1 {
+  background-image: url("Images/bridge.jpg");
+  background-size: cover;
+  grid-column: 1/2;
+  grid-row: 1/3;
+  height: 62vh;
+  width: 26vw;
+  position: relative;
+}
+h2 {
+  position: absolute;
+  bottom: 4vh;
+  padding-left: 1vw;
+  font-size: 4vh;
+  color: white;
+  font-weight: 100;
+}
+p {
+  position: absolute;
+  bottom: 1vh;
+  padding-left: 1.2vw;
+  font-size: 2.5vh;
+  color: rgb(94, 94, 94);
+}
+.img2 {
+  grid-column: 2/5;
+  grid-row: 1;
+  height: 30vh;
+  width: 27.6vw;
+  position: relative;
+  background-image: url("Images/mobile.jpg");
+  background-size: cover;
+}
+.img3 {
+  position: relative;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  height: 30vh;
+  width: 13.5vw;
+  background-image: url("Images/cofee.jpg");
+  background-size: cover;
+}
+.img4 {
+  grid-column: 3/5;
+  grid-row: 2/3;
+  height: 30vh;
+  width: 13.5vw;
+  background-image: url("Images/camera_girl.jpg");
+  background-size: cover;
+  position: relative;
+}
+footer {
+  margin-top: 5vh;
+  /* height: 100%; */
+  width: 100%;
+  background: rgb(35,184,120);
+  background: linear-gradient(90deg, rgba(35,184,120,0.9585084033613446) 0%, rgba(55,194,195,1) 100%);}
+.heading {
+  width: 48%;
+  margin: auto;
+  align-items: center;
+  padding-top: 10vh;
+}
+h1,
+h3 {
+  text-align: center;
+  padding-top: 2vh;
+  color: white;
+  font-weight: 100;
+}
+.sub-contents {
+  width: 100%;
+  /* align-items: center; */
+  display: flex;
+}
+#s1,
+#s2,
+#s3 {
+  font-weight: 100;
+  text-align: center;
+  padding: 5vh;
+}
+h4 {
+  color: white;
+  font-size: 5vh;
+  padding-bottom: 2vh;
+  font-weight: 100;
+  text-align: center;
+}
+#p1 {
+  font-size: 2.5vh;
+  position: relative;
+}
+#icon{
+  border: 2px solid white;
+  color: white;
+  padding: 12px;
+  
+  
+}
+@media only screen and (max-width: 700px) {
+  .sub-contents {
+    flex-direction: column;
+  }
+  .container2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .img1,.img2,.img3,.img4{
+    width: 100%;
+  }
+  .nav_item ul li{
+    font-size: 1.6vh;
+    /* margin: auto; */
+  }
+}

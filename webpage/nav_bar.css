@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+nav
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;}
+body{
+  font-family:  ibm plex sans, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol;
+  background-color: #062a61;
+}
+#navbar{
+  width: 100%;
+  display: flex;
+  background-color: #0d6efd;
+}
+#icons{
+  display: block;
+}
+#icons ul{
+  display: flex;
+  margin-right: 60px;
+}
+#icons ul li{
+  list-style-type: none;
+  /* padding: .6vw; */
+  font-size: 2vh;
+  margin: auto;
+  position: relative;
+}
+#icons ul li a{
+  color:  #fff ;
+  text-decoration: none;
+}
+#icons ul li a:hover{
+  color: aqua;
+}
+#btn a{
+  display: flex;
+  font-size: .8vw;
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+  border-radius: .2vw;
+
+}
+#btn{
+  background-color: #dc3545;
+  border-color: #dc3545;
+  border-radius: .2vw;
+
+  margin: auto;
+  position: relative;
+}
+#btn :hover{
+  background-color: #ae6d13a9;
+  border-color: #55160e;
+}
+#btn a :hover{
+  background-color: #ae6d13a9;
+  border-color: #55160e;
+}
+#drop{
+  display: inline-flex;
+}
+#logo{
+  width: 40%;
+  height: 40px;
+  /* position: fixed; */
+}
+#logo a{
+  padding-left: 10vw;
+  position: relative;
+}
+#icons{
+  width: 60%;
+  position: relative;
+  height: 40px;
+}
+#git{
+  color: white;
+  padding: 1.5vw;
+}
+h2{
+  margin-top: 100%;
+}
