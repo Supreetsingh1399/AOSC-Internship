@@ -1,4 +1,5 @@
 // Prompt the user for their name
+const prompt = require("prompt-sync")();
 const name = prompt("Enter your name:");
 
 // Prompt the user for their age
