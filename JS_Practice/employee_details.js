@@ -10,12 +10,12 @@ var Details = {
   rahul: { post: "Designer", remaining_leaves:""},
 };
 var total_leaves=15;
-Details.__proto__ = employee;
+employee.__proto__ = Details;
 function login(username, password,leave) {
   if (employee[username] && employee[username].username == username && employee[username].password == password) {
     console.log("Login successful");
-    Details[username].leaves= total_leaves-leave;
-    console.log("Total no. of remaining leaves left:",Details[username].leaves);
+    employee[username].remaining_leaves= total_leaves-leave;
+    console.log("Total no. of remaining leaves left:",employee[username].remaining_leaves);
   } 
   else {
     console.log("Login failed")
