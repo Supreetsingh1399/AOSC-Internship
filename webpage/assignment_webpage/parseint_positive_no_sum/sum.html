@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: lightblue;
+            text-align: center;
+            font-size: 9vh;
+            margin-top: 200px;
+        }
+    </style>
+<body>
+    <script>
+        var num1 = parseInt(window.prompt("Enter the first number:"));
+        // document.write("The first number is: " + num1 + "<br>");
+        document.write("<p style='color: red;'>The first number is: " + num1 + "</p>");
+        var num2 = parseInt(prompt("Enter the second number:"));
+        document.write("<p style='color: green;'>The second number is: " + num2 + "</p>");
+        if (num1 >= 0 && num2 >= 0) {
+            var sum = num1 + num2;
+            document.write("<p style='color: gray;'>The sum of the two positive numbers is: " + sum + "</p>");
+        } 
+        else if (num1 < 0 || num2 < 0) {
+            document.write("<p style='color: gray;'>Negative numbers are not allowed!</p>");
+        }
+        else {
+            document.write("<p style='color: gray;'>Please enter a valid number!</p>");
+        }
+    </script>
+   
+</body>
+</html>

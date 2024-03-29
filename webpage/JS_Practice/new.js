@@ -13,7 +13,6 @@
 // }
 // eval("var b = 22.5")
 // console.log(b)
-
 // Hoisting
 
 
