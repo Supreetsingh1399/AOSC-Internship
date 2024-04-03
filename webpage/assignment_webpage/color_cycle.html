@@ -1,0 +1,28 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var Colors = [
+        "red",
+        "blue",
+        "green",
+        "yellow",
+        "orange",
+        "purple",
+        "pink",
+      ];
+      var i = 0;
+      for (i in Colors) {
+        function changeColor() {
+          document.body.style.backgroundColor = Colors[i];
+            i = (i + 1) % Colors.length;
+        }
+      }
+      setInterval(changeColor, 1000);
+    </script>
+  </body>
+</html>

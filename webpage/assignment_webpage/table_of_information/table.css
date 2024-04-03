@@ -1,0 +1,10 @@
+#table{
+    display: block;
+    font-size: 5vh;
+    border: 2px solid whitesmoke;
+    width: 22%;
+}
+#table th, td{
+    border: 2px solid whitesmoke;
+    box-shadow: 2px 2px 2px 2px;
+}
