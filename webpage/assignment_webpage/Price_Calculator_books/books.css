@@ -1,73 +1,91 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
 }
-.container{
-    display: flex;
-    margin: 2vw;
-    font-size: 6vh;
+.container {
+  display: flex;
 }
-section{
-    margin: 2vw;
-    height: 60vh;
-    width: 100%;
-    position: relative;
-
+.I1 {
+  margin: 10px;
+  background-image: url(IMAGES/a_court_of_thieves.jpg);
+  height: 500px;
+  width: 300px;
+  background-size: cover;
+  position: relative;
+  border-radius: 25px;
+  /* border: 4px solid black; */
 }
-section p{
-    bottom: 7;
-    position: absolute;
-    color: white;
-    padding-left: 30px;
+.I2 {
+  margin: 10px;
+  background-image: url(IMAGES/Return.jpg);
+  height: 500px;
+  width: 300px;
+  background-size: cover;
+  position: relative;
+  border-radius: 25px;
+  /* border: 4px solid black; */
 }
-.s1{
-    background-image:url(IMAGES/a_court_of_thieves.jpg);
-    background-size: cover;
-    border-radius: 10px;
-    height: 60vh ;   
+.I3 {
+  margin: 10px;
+  background-image: url(IMAGES/rise_of_dragons.jpg);
+  height: 500px;
+  width: 300px;
+  background-size: cover;
+  position: relative;
+  border-radius: 25px;
+  /* border: 4px solid black; */
 }
-.s2{
-    background-image:url(IMAGES/rise_of_dragons.jpg);
-    background-size: cover;
-    border-radius: 10px;
-    height: 60vh ;   
-}
-.s3{
-    background-image:url(IMAGES/Return.jpg);
-    background-size: cover;
-    border-radius: 10px;
-    height: 60vh ;
+/* section{
+  border: 2px solid black;
+  margin-top: 170%;
+  position: absolute;
+} */
+p {
+  font-size: 20px;
+  font-weight: bold;
+  bottom: 30;
+  position: absolute;
+  color: rgb(28, 87, 190);
+  padding-left: 20px;
 }
 .container2{
-margin-left: 4vw;
+  margin-top: 40px;
+  margin-left: 20px;
+  margin-bottom: 20px;
 }
-.btn{
-border: 2px solid black;
-background-color: rgba(128, 128, 128, 0.292);
-color: black;
-padding: 10px;
-border-radius: 30px;
-cursor: pointer;
-box-shadow: 2px 2px 5px black;
-font-size: 6vh;
+.btn {
+  background-color: gray;
+  color: white;
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 2px 2px 2px 2px black;
 }
 .container3{
-    border: 1px solid black;
-    margin-top: 2vh;
+  border: 2px solid black;
+  padding: 10px;
 }
-h2{
-    font-size: 6vh;
-    margin-left: 4vw;
-    margin-top: 2vh;
+h2 {
+  margin: 20px;
 }
-.Table-items{
-    margin-left: 4vw;
-    font-size: 4vh;
-    border: 1px solid black;
+.Table-items {
+border: 2px solid black;
+margin-left: 20px;
+font-size: 2.6vh;
 }
-.Table-items th{
-    border: 1px solid black;
-    padding: 10px;
+.Table-items th {
+  border: 2px solid black;
+  padding: 10px;
+}
+.I1.active {
+  border: 8px solid black;
+}
+.I2.active {
+  border: 8px solid black;
+}
+.I3.active {
+  border: 8px solid black;
 }
