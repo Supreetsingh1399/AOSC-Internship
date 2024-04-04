@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+.container{
+    display: flex;
+    margin: 2vw;
+    font-size: 6vh;
+}
+section{
+    margin: 2vw;
+    height: 60vh;
+    width: 100%;
+    position: relative;
+
+}
+section p{
+    bottom: 7;
+    position: absolute;
+    color: white;
+    padding-left: 30px;
+}
+.s1{
+    background-image:url(IMAGES/a_court_of_thieves.jpg);
+    background-size: cover;
+    border-radius: 10px;
+    height: 60vh ;   
+}
+.s2{
+    background-image:url(IMAGES/rise_of_dragons.jpg);
+    background-size: cover;
+    border-radius: 10px;
+    height: 60vh ;   
+}
+.s3{
+    background-image:url(IMAGES/Return.jpg);
+    background-size: cover;
+    border-radius: 10px;
+    height: 60vh ;
+}
+.container2{
+margin-left: 4vw;
+}
+.btn{
+border: 2px solid black;
+background-color: rgba(128, 128, 128, 0.292);
+color: black;
+padding: 10px;
+border-radius: 30px;
+cursor: pointer;
+box-shadow: 2px 2px 5px black;
+font-size: 6vh;
+}
+.container3{
+    border: 1px solid black;
+    margin-top: 2vh;
+}
+h2{
+    font-size: 6vh;
+    margin-left: 4vw;
+    margin-top: 2vh;
+}
+.Table-items{
+    margin-left: 4vw;
+    font-size: 4vh;
+    border: 1px solid black;
+}
+.Table-items th{
+    border: 1px solid black;
+    padding: 10px;
+}
