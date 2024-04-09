@@ -66,6 +66,10 @@ p{
   cursor: pointer;
   box-shadow: 7px 2px 20px 2px black;
 }
+#btn:hover{
+  transform: scale(1.1);
+  box-shadow: 9px 6px 20px 10px black;
+}
 .container3{
   border: 2px solid black;
   padding: 10px;
@@ -131,5 +135,25 @@ width: 50%;
   }
   .Table-items {
     width: 50%;
+  }
+  .scroll-left{
+    position: absolute;
+    left:0;
+    top: 35%;
+    z-index: 2;
+    cursor: pointer;
+    font-size: 7vh;
+    padding-left: 10px;
+    color: black;
+  }
+  .scroll-right{
+    position: absolute;
+    right:0;
+    top: 35%;
+    z-index: 2;
+    cursor: pointer;
+    font-size: 7vh;
+    padding-left: 10px;
+    color: black;
   }
 }

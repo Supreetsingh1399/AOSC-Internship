@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const url = window.location.href;
+        const nameRegex = /username=([^&]*)/;
+        const emailRegex = /useremail=([^&]*)/;
+        
+        const userName = url.match(nameRegex) ? url.match(nameRegex)[1] : '';
+        const userEmail = url.match(emailRegex) ? url.match(emailRegex)[1] : '';
+    
+        document.body.innerHTML += `<p>Name: ${decodeURIComponent(userName)}</p>`;
+        document.body.innerHTML += `<p>Email: ${decodeURIComponent(userEmail)}</p>`;
+    </script>
+</body>
+</html>

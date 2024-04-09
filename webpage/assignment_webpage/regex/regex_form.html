@@ -4,12 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        form{
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            margin: 0 auto;
+            margin-top: 100px;
+        }
+        label{
+            margin-bottom: 10px;
+        }
+        input{
+            padding: 5px;
+            margin-left: 10px;
+        }
+        input[type="submit"]{
+            margin-top: 10px;
+            width: 100px;
+            margin-left: 0;
+        }
+    </style>
 </head>
 <body>
-    <form action="">
-        <label for="">Name: <input type="text"></label>
-        <label for="">Email: <input type="email" ></label>
-        <input type="submit" value="submit">
+    <form method="get" action="\webpage\assignment_webpage\regex\regex1.html">
+        <label for="name">Name: <input type="text" name="username" required></label>
+        <label for="email">Email: <input type="email" name="useremail" required></label>
+        <input type="submit" value="submit" required>
     </form>
+   
 </body>
 </html>
