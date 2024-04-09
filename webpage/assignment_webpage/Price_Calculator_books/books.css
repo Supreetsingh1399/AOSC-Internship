@@ -3,6 +3,10 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Times New Roman", Times, serif;
+  scroll-behavior: smooth;
+}
+body {
+  background-color: rgb(223, 241, 241);
 }
 #header {
   padding: 2vh;
@@ -12,7 +16,8 @@
   top: 0;
   width: 100%;
   opacity: 0.9;
-  /* z-index: 0;  	 */
+  box-shadow: 2px 3px 30px 20px rgba(0, 0, 0, 0.811);
+  z-index: 1;
 }
 h1 {
   font-size: 5vh;
@@ -21,18 +26,22 @@ h1 {
 .container {
   display: flex;
   background-color: aliceblue;
-  overflow: scroll;
+  overflow: hidden;
   padding-bottom: 3vh;
   padding-top: 5vh;
   margin-top: 10vh;
-  /* z-index: 1; */
+  z-index: 0;
+  transition: all 0.3s; 
 }
 .sub-container{
-  margin: 30px 0px 30px 30px;
+  margin: 30px 30px 30px 30px;
   border: 2px solid black;
   border-radius: 25px;
   background-color: rgb(228, 228, 225);
-  /* z-index: 2; */
+  transition: all 0.3s; 
+}
+.sub-container:hover {
+  transform: scale(1.1);
 }
 p{
   text-align: center;
@@ -46,7 +55,7 @@ p{
 .container2{
   margin-top: 40px;
   margin-left: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 20px; 
 }
 #btn {
   background-color: gray;
@@ -62,6 +71,7 @@ p{
   padding: 10px;
   width: 100%;
   position: relative;
+  background-color: rgb(243, 239, 232);
 }
 h2 {
   margin: 20px;
@@ -83,6 +93,33 @@ width: 50%;
 }
 .sub-container.active {
   box-shadow: 7px -7px 30px 4px black;
+  transform: scale(1.1);
+}
+.scroll-left{
+  position: absolute;
+  left:0;
+  top: 50%;
+  z-index: 2;
+  cursor: pointer;
+  font-size: 7vh;
+  padding-left: 10px;
+  color: rgba(215, 215, 215, 0.878);
+}
+.scroll-right{
+  position: absolute;
+  right:0;
+  top: 50%;
+  z-index: 2;
+  cursor: pointer;
+  font-size: 7vh;
+  padding-left: 10px;
+  color: rgba(215, 215, 215, 0.878);
+}
+.scroll-right:hover{
+  transform: scale(1.5);
+}
+.scroll-left:hover{
+  transform: scale(1.5);
 }
 @media screen and (max-width: 700px) {
   .I1{
