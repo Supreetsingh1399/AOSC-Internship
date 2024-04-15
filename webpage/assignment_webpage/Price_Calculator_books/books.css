@@ -89,7 +89,6 @@ width: 50%;
 .Table-items th {
   border: 2px solid black;
   padding: 1.5vh;
-  /* position: relative; */
 }
 .Table-items tr td{
   border: 2px solid black;
