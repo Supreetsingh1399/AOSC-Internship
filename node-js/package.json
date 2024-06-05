@@ -1,0 +1,15 @@
+{
+  "name": "js",
+  "version": "1.0.0",
+  "description": "Learning node js",
+  "main": "core-modules.js",
+  "scripts": {
+    "dev": "nodemon core-modules.js"
+  },
+  "author": "Supreet singh",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "nodemon": "^3.1.3"
+  }
+}
