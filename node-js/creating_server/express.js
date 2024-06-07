@@ -1,18 +1,25 @@
-const dotenv = require('dotenv');
 const mongoose = require('mongoose');
-dotenv.config();
 const express = require('express');
+const morgan = require('morgan');
 const app = express();
 
-const postRoutes = require('./routes/post');
+app.use(express.json());
+// const bodyParser = require('body-parser');
 const port = 8080;
+const postRoutes = require('./routes/post');
+
+// Set URI directly
+const URI = 'mongodb://localhost:27017/';
 
 // Connect to db
-mongoose.connect(process.env.URI)
+mongoose.connect(URI)
   .then(() => console.log('DB connected'))
   .catch(err => console.log(`DB connection error: ${err.message}`));
 
 // Middleware 
+app.use(morgan('dev'));
+// app.use(bodyParser.json());
+app.use(express.json());
 app.use('/', postRoutes);
 
 // Start the server
