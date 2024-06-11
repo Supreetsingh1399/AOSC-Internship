@@ -18,14 +18,20 @@ exports.getPost = (_req, res) => {
 
 exports.createPost = async (req, res) => {
     const post = new Post(req.body);
-    try {
-        const result = await post.save();
+    // try {
+    //     const result = await post.save();
+    //     res.status(200).json({
+    //         post: result
+    //     });
+    // } catch (err) {
+    //     res.status(400).json({
+    //         error: err
+    //     });
+    // }
+    post.save().then(result => {
         res.status(200).json({
             post: result
         });
-    } catch (err) {
-        res.status(400).json({
-            error: err
-        });
-    }
+    });
+
 };
